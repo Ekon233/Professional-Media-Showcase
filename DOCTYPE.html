@@ -1,0 +1,182 @@
+Cpp code 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Media Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Professional Media Showcase</h1>
+            <nav>
+                <ul>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#audio">Audio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="gallery1.jpg" alt="Gallery Image 1">
+                <img src="gallery2.jpg" alt="Gallery Image 2">
+                <img src="gallery3.jpg" alt="Gallery Image 3">
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Featured Videos</h2>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="audio">
+            <h2>Audio Collection</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Professional Media Showcase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+Css
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery img {
+    max-width: calc(33.333% - 20px);
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Video and Audio */
+video, audio {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery img {
+        max-width: calc(50% - 20px);
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
